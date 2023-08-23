@@ -1,0 +1,95 @@
+.formbody {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 2rem 0 2rem 3rem;
+  top: 57%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.headerText {
+  color: #36384d;
+  font-size: 3rem;
+  margin-bottom: 1.3rem;
+}
+
+.iconLists {
+  list-style: none;
+  margin-left: -43px;
+  line-height: 2rem;
+}
+
+.listIcon {
+  margin-right: 8px;
+  height: 14px;
+}
+.emailText {
+  margin-top: 4rem;
+  font-size: 0.8rem;
+  letter-spacing: -0.3px;
+  font-weight: 700;
+  color: #36384d;
+}
+.emailInput {
+  padding: 1rem 12rem 1rem 1rem;
+  border-radius: 10px;
+  margin-top: 0.6rem;
+  margin-bottom: 1.5rem;
+  border: solid #999;
+}
+.button {
+  background-color: #36384d;
+  color: #fff;
+  padding: 1rem 3.5rem 1rem 3.5rem;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.desktopSvg {
+  height: 540px;
+  right: 30%;
+}
+
+.emailError {
+  color: hsl(4, 100%, 67%);
+}
+.emailErrorInput {
+  padding: 1rem 12rem 1rem 1rem;
+  border-radius: 10px;
+  margin-top: 0.6rem;
+  margin-bottom: 1.5rem;
+  border: solid hsl(4, 100%, 67%);
+  background-color: #e9afa6;
+}
+
+@media only screen and (max-width: 476px) {
+  .formbody {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0;
+    padding-top: 150px;
+    height: 100%;
+    margin: 0;
+  }
+  .desktopSvg {
+    height: 1000px;
+    width: 400px;
+  }
+  .headerText {
+    margin-top: -130px;
+  }
+  .iconLists {
+    margin-left: -42px;
+  }
+  .subHeaderText {
+    width: 80%;
+    line-height: 1.7rem;
+  }
+  .formText {
+    margin-left: 1.5rem;
+    margin-bottom: 2rem;
+  }
+}
